@@ -1,0 +1,16 @@
+apiVersion: delivery.ocm.software/v1alpha1
+kind: Localization
+metadata:
+  name: incident-management-localization
+  namespace: ocm-system
+spec:
+  interval: 5m
+  sourceRef:
+    kind: Resource
+    name: incident-management-deployment # this is the podinfo deployment manifest resource we created previously
+  configRef:
+    kind: ComponentVersion
+    name: incident-management-app
+    resourceRef:
+      name: config # here we reference the resource containing localization rules
+      version: latest
