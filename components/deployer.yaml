@@ -1,7 +1,7 @@
 apiVersion: delivery.ocm.software/v1alpha1
 kind: FluxDeployer
 metadata:
-  name: incident-management-deployer
+  name: incident-management-deploy
   namespace: ocm-system
 spec:
   sourceRef:
