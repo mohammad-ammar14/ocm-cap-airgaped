@@ -7,11 +7,12 @@ spec:
   interval: 1m
   sourceRef:
     kind: Localization
-    name: podinfo-deployment # this is the podinfo deployment localization
+    name: incident-management-localization # this is the podinfo deployment localization
   configRef:
     kind: ComponentVersion
-    name: podinfo
+    name: incident-management-app
     resourceRef:
       name: config # here we reference the configuration resource
+      version: latest
   values:
-    serviceAccountName: app-ops
+    serviceAccountName: air-gapped-ops
