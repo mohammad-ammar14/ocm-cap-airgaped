@@ -5,8 +5,8 @@ metadata:
   namespace: ocm-system
 spec:
   sourceRef:
-    kind: Localization
-    name: incident-management-localization
+    kind: Configuration
+    name: incident-management-deploy-configure
   kustomizationTemplate:
     interval: 1m0s
     path: ./
