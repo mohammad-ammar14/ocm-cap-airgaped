@@ -6,7 +6,7 @@ metadata:
 spec:
   sourceRef:
     kind: Configuration
-    name: incident-management-deploy-configure
+    name: incident-management-deploy-configuration
   kustomizationTemplate:
     interval: 1m0s
     path: ./
