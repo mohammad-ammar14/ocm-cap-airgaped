@@ -15,4 +15,4 @@ spec:
       name: config # here we reference the configuration resource
       version: latest
   values:
-    serviceAccountName: air-gapped-ops
+    serviceAccountName: air-gapped-reg
